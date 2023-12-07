@@ -16,23 +16,24 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
 
 }
 .navbar__list {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+
 }
-.navbar__list--bold {
-    font-weight: bold;
-}
-.navbar__list--regular {
+
+.navbar__list--grey {
     margin-left: 45px;
+    color: #747372;
 }
 .navbar__button {
     padding: 5px 45px;
     border-radius: 3px;
-    
+    font-weight: bold;
 }
 
 /*         <------- HEADER ------->        */
@@ -114,9 +115,12 @@ margin-right: auto;
 }
 .main__card--title {
     font-size: 32px;
+    margin-bottom: 0px;
 }
 .main__paragraph {
     color: rgb(124, 124, 124);
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 .main__button {
     width: 146px;
@@ -158,6 +162,46 @@ footer {
     margin-top: 5%;
 
 }
+.footer__input {
+   margin-top: auto;
+   margin-bottom: auto;
+}
+.footer__input--field {
+    height: 20px;
+}
+.footer__input--img {
+    height: 30px;
+}
+
+
+
+
+/*         <------- ANIMATION ------->        */
+    .header__image {
+        position: relative;
+        animation: mymove 5s infinite;
+    }
+    @keyframes mymove {
+        from {left: 200px}
+        to {left: 0px}
+    }
+    .main__img:hover {
+        animation-name: rotate;
+        animation-duration: 2s;
+        animation-direction: normal;
+    }
+    @keyframes rotate {
+        0% {
+            transform: rotate(0);
+        }
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+        
+    
+
+
 
 /*         <------- MEDIA QUERY ------->        */
 
