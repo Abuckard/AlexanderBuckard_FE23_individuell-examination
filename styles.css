@@ -1,35 +1,47 @@
+/*        
+Koden för animationerna ligger nästan längst ner.
+En animation är igång hela tiden, den andra är en hover på de små bilderna.
+*/
+
+
+
 body {
  /*  max-width: 1440px; */
 
  font-family: 'Fira Sans', sans-serif;
-
 }
 
 /*         <------- NAVBAR ------->        */
+/*         <------- NAVBAR ------->        */
+/*         <------- NAVBAR ------->        */
+
 .navbar {
     margin: 2%
 }
+
 .navbar__img {
     width: auto;
     height: auto;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
 
 }
+
 .navbar__list {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-
 }
 
 .navbar__list--grey {
     margin-left: 45px;
     color: #747372;
 }
+
 .navbar__button {
     padding: 5px 45px;
     border-radius: 3px;
@@ -37,25 +49,30 @@ body {
 }
 
 /*         <------- HEADER ------->        */
+/*         <------- HEADER ------->        */
+/*         <------- HEADER ------->        */
+
 .header {
     display: flex;    
     flex-direction: column;
     align-items: center;
     font-size: 16px;
 }
+
 .header__title {
         font-size: 53px;
-        margin-bottom: 0;
-        
+        margin-bottom: 0;        
 }
+
 .header__paragraph {
     margin-bottom: 3%;
+    text-align: center;
 }
-.header__container--buttons {
+
+.header__container {
     margin-bottom: 2%;
     display: flex;
-    gap: 15%;
-    
+    gap: 15%;    
 }
 
 .header__button {
@@ -69,41 +86,45 @@ body {
     border-radius: 6px;
     background-color: black;
     color: white;
-
-
-
 }
+
+
 
 /*         <------- MAIN ------->        */
+/*         <------- MAIN ------->        */
+/*         <------- MAIN ------->        */
+
 .main {
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .main__title {
     text-align: center;
     margin-top: 8%;
     margin-bottom: 8%;
     font-size: 53px;
 }
+
 .main__card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2%;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 150px;
-
- 
+    margin-bottom: 150px; 
 }
+
 .main__img {
     padding-bottom: 10%;
 }
-.main__card--small {
+
+.main__smallcard {
     min-height: 383px;
-    text-align: center;
-    
+    text-align: center;    
 }
-.main__card--big {
+
+.main__bigcard {
     min-height: 349px;
     background-color: #343332;
     color: white;
@@ -113,37 +134,37 @@ margin-right: auto;
     align-items: center;
     flex-direction: column;    
 }
-.main__card--title {
+
+.main__bigcard--title {
     font-size: 32px;
     margin-bottom: 0px;
 }
-.main__paragraph {
+
+.main__bigparagraph {
     color: rgb(124, 124, 124);
     margin-top: 0px;
     margin-bottom: 40px;
 }
+
 .main__button {
     width: 146px;
     height: 40px;
     background-color: #343332;
     border: 1px solid rgb(124, 124, 124);
     color: rgb(124, 124, 124);
-
-
 }
 
-
 /*         <------- FOOTER ------->        */
+/*         <------- FOOTER ------->        */
+/*         <------- FOOTER ------->        */
+
 footer {
     background-image: url(images/Map.png);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
 }
 
-
 .footer__box {
-
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -155,28 +176,46 @@ footer {
     margin-top: 15%;
     margin-bottom: 15%;
     padding: 7%;
+    color: #343332;
 }
 
 .footer__title {
     font-size: 53px;
     margin-top: 5%;
-
+    color: black
 }
-.footer__input {
+
+.footer__contact {
    margin-top: auto;
    margin-bottom: auto;
 }
-.footer__input--field {
+
+.footer__inputfield {
     height: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 10px;
+    border: 1px solid #343332;    
 }
-.footer__input--img {
-    height: 30px;
+
+.footer__buttoncontainer {
+    text-align: center;
+    margin-top: 25px;
 }
 
-
-
+.footer__button {
+    width: 200px;
+    height: 50px;
+    border: 0px transparent;
+    background-color: #343332;
+    color: white;
+    font-size: 18px;
+}
 
 /*         <------- ANIMATION ------->        */
+/*         <------- ANIMATION ------->        */
+/*         <------- ANIMATION ------->        */
+
     .header__image {
         position: relative;
         animation: mymove 5s infinite;
@@ -197,14 +236,11 @@ footer {
         100% {
             transform: rotate(360deg)
         }
-    }
-        
+    }   
     
-
-
-
 /*         <------- MEDIA QUERY ------->        */
-
+/*         <------- MEDIA QUERY ------->        */
+/*         <------- MEDIA QUERY ------->        */
 
 
 @media screen and (min-width: 600px) {
@@ -225,7 +261,17 @@ footer {
           display: none;
         }
         
-        footer { display: flex; }
-        
-        
-      }
+       footer {
+        display: flex; 
+
+    }
+    .footer__box {
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+    .header__paragraph, .header__button {
+        margin-bottom: 40px;
+    }
+      
+                
+}
