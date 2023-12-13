@@ -79,8 +79,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    
+    gap: 10px;    
     width: 143px;
     height: 40px;
     border-radius: 6px;
@@ -121,7 +120,14 @@ body {
 
 .main__smallcard {
     min-height: 383px;
-    text-align: center;    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: #EBEBEB;
+}
+.main__smalltitle {
+    padding-top: 20px;
 }
 
 .main__bigcard {
@@ -241,6 +247,9 @@ footer {
 /*         <------- MEDIA QUERY ------->        */
 /*         <------- MEDIA QUERY ------->        */
 /*         <------- MEDIA QUERY ------->        */
+/*         Jag har satt min mobilvy på 600px     */
+/*         Jag har satt min mobilvy på 600px     */
+/*         Jag har satt min mobilvy på 600px     */
 
 
 @media screen and (min-width: 600px) {
