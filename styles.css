@@ -15,9 +15,6 @@ body {
 /*         <------- NAVBAR ------->        */
 /*         <------- NAVBAR ------->        */
 
-.navbar {
-    margin: 2%
-}
 
 .navbar__img {
     width: auto;
@@ -28,6 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+    margin: 2%
 
 }
 
